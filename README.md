@@ -1,2 +1,2 @@
 # QcmQt
-this is a simple implementation in QT c++ of a test based in multiple choices 
+This is a simple implementation of an MCQ test generator written in QT c++. 
