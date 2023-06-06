@@ -18,7 +18,7 @@ void AdminPage::on_make_test_clicked()
 {
 
     MakeTest* t= new MakeTest(this);
-     t->show();
+    t->show();
 }
 
 
@@ -28,8 +28,18 @@ void AdminPage::on_add_etudiant_clicked()
     admin->show();
 }
 
+
 void AdminPage::on_exit_clicked()
 {
     close();
 
 }
+
+void AdminPage::on_add_etudiant_2_clicked()
+{
+    AjoutEnseignant* admin2= new AjoutEnseignant(this);
+    admin2->show();
+}
+
+
+

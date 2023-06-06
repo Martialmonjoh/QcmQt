@@ -4,7 +4,9 @@
 #include <QDialog>
 #include "maketest.h"
 #include "ajoutetudiant.h"
+#include "ajoutenseignant.h"
 #include "loginpage.h"
+#include "matiere.h"
 
 namespace Ui {
 class AdminPage;
@@ -24,6 +26,8 @@ private slots:
     void on_add_etudiant_clicked();
 
     void on_exit_clicked();
+
+    void on_add_etudiant_2_clicked();
 
 private:
     Ui::AdminPage *ui;

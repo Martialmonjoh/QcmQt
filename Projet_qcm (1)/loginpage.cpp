@@ -6,6 +6,8 @@
 #include <QCheckBox>
 #include <QMessageBox>
 #include "mainwindow.h"
+#include "maketest.h"
+#include "enseignant.h"
 #include <QApplication>
 #include <fstream>
 #include <iostream>
@@ -53,7 +55,7 @@ bool trouver_p(const char& para,const string& check){
             }
         }else
         {
-            throw string("the path or the file is incorect in login page");
+            throw string("le chemin ou le fichier est incorrect dans la page de connexion");
         }
 
     } catch(const string & msg){
@@ -61,33 +63,70 @@ bool trouver_p(const char& para,const string& check){
 }
     return check_np;
 }
+
+
+bool trouver_p2(const char& para,const string& check){
+    string question_rep2="enseignants.txt";
+    ifstream myfile(question_rep2);
+    string buffer;
+    bool check_np2= false;
+    try{
+        if(myfile.is_open()){
+            while(myfile.good()){
+                getline(myfile,buffer);
+                if(buffer[0]==para){
+                    buffer.erase(0,1);
+                }if(buffer==check){
+                    check_np2=true;
+                    break;
+                }
+            }
+        }else
+        {
+            throw string("le chemin ou le fichier est incorrect dans la page de connexion");
+        }
+
+    } catch(const string & msg){
+        cerr<<msg<<endl;
+    }
+    return check_np2;
+}
 void LoginPage::on_pushButton_log_clicked()
 {
     QString user_t= ui->lineEdit_U->text();
     QString user_p= ui->lineEdit_P->text();
 
     if(user_t=="" && user_p==""){
-        QMessageBox::information(this,"WARNING!","please enter a correct id");
+        QMessageBox::information(this,"WARNING!","veuillez entrer un identifiant correct");
     }
-    else if(user_t == "admin" && user_p =="admin"){
+    else if(user_t == "monjoh" && user_p =="monjoh"){
         ui->lineEdit_U->setText("");
         ui->lineEdit_P->setText("");
         AdminPage *a=new AdminPage;
         a->show();
-
    }else{
         bool check_name=trouver_p('*',user_t.toStdString());
         bool check_pass=trouver_p('{',user_p.toStdString());
         if (check_name && check_pass)
         {
-             QMessageBox::information(this,"Login","Good luck!");
-             close();
 
              MainWindow * m = new MainWindow(this);
              m->set_name(user_t.toStdString());
              m->show();
-        }else{
-            QMessageBox::information(this,"oops","make sure you have entered the right parameters");
+        }
+        else{
+            QMessageBox::information(this,"oops","assurez-vous d'avoir entré les bons paramètres");
+        }
+    }
+   if(user_t=="" && user_p==""){
+        QMessageBox::information(this,"WARNING!","veuillez entrer un identifiant correct");
+   }else{
+        bool check_name2=trouver_p2('*',user_t.toStdString());
+        bool check_pass2=trouver_p2('{',user_p.toStdString());
+        if (check_name2 && check_pass2)
+        {
+            Enseignant* m= new Enseignant(this);
+             m->show();
         }
     }
 }

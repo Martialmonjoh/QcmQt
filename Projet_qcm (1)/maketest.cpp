@@ -66,9 +66,9 @@ void MakeTest::on_pushButton_add_clicked()
      {
          if(q.getTexte()=="")
          {
-             QMessageBox::information(this,"WARNING!","you have forgot to enter a question");
+             QMessageBox::information(this,"WARNING!","vous avez oublié de saisir une question");
          }
-         else{QMessageBox::information(this,"WARNING! ","please enter 2 to 5 possibilities");}
+         else{QMessageBox::information(this,"WARNING! ","veuillez entrer 2 à 5 possibilités");}
      }
      else
      {
@@ -95,11 +95,11 @@ void MakeTest::on_pushButton_exit_clicked()
 
     if(buffer=="")
     {
-        QMessageBox::information(this,"DANGER DANGER!!!","Not a single question has been saved");
+        QMessageBox::information(this,"Erreur","Pas une seule question n'a été enregistrée");
     }else
     {
         close();
-        QMessageBox::information(this,"DANGER DANGER!!!","ALL Questions have been saved.\n No more modifications are allowed!!!");
+        QMessageBox::information(this,"Erreur","TOUTES les questions ont été enregistrées.\n Aucune autre modification n'est autorisée !!! ");
     }
     myfile.close();
 }
@@ -117,5 +117,6 @@ void MakeTest::showtime_m()
 
     ui->digital_clock->setText(time_text);
 }
+
 
 

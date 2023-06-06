@@ -29,6 +29,8 @@ private slots:
     void showtime_t();
 
 
+    void on_valider_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     string name_etudiant;

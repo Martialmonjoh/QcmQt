@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "question.h"
+#include "note.h"
 
 #include <QObject>
 #include <QString>
@@ -54,7 +55,7 @@ MainWindow::MainWindow(QWidget *parent) :
     }
     myfile.close();
         }else{
-            throw string("the path or the file is incorect");
+            throw string("le chemin du fichier est incorrect");
         }
         }
     catch(const string & msg){
@@ -66,7 +67,7 @@ MainWindow::MainWindow(QWidget *parent) :
     timer->start();
 
 
-    string note_tex="please note that ids go from 1->...  \n if you are the first person your id is 1 and ...";
+    string note_tex="veuillez noter que les identifiants vont de 1 a n \n si vous êtes la première personne, votre identifiant est 1 et ...";
     QString note_qs=QString::fromStdString(note_tex);
     QMessageBox::information(this,"WARNING!!",note_qs);
 
@@ -106,7 +107,7 @@ void MainWindow::showQuestion(size_t i)
 void MainWindow::on_valider_clicked()
 {    QString counter_qs=ui->lineEdit_id->text();
     if(counter_qs==""){
-        QMessageBox::information(this,"Warning !","you have forgot to enter an ID");
+        QMessageBox::information(this,"Warning !","vous avez oublié de saisir un identifiant");
 
     }else{
      Question q = questions[counter];
@@ -220,3 +221,9 @@ void MainWindow::showtime_t()
 
     ui->digital_clock->setText(time_text);
 }
+
+void MainWindow::on_valider_2_clicked()
+{
+
+}
+

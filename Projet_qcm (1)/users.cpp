@@ -19,7 +19,7 @@ void Users::on_yes_btn_clicked()
 {
     QString id_msg=ui->lineEdit_user->text();
     if(id_msg==""){
-        QMessageBox::information(this,"DANGER !","please enter your id");
+        QMessageBox::information(this,"Erreur","veuillez saisir votre identifiant");
     }else{
     close();
     LoginPage* login=new LoginPage(this);

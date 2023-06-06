@@ -17,7 +17,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     adminpage.cpp \
+    ajoutenseignant.cpp \
     ajoutetudiant.cpp \
+    enseignant.cpp \
     loginpage.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -29,7 +31,9 @@ SOURCES += \
 
 HEADERS += \
     adminpage.h \
+    ajoutenseignant.h \
     ajoutetudiant.h \
+    enseignant.h \
     loginpage.h \
     mainwindow.h \
     maketest.h \
@@ -40,7 +44,9 @@ HEADERS += \
 
 FORMS += \
     adminpage.ui \
+    ajoutenseignant.ui \
     ajoutetudiant.ui \
+    enseignant.ui \
     loginpage.ui \
     mainwindow.ui \
     maketest.ui \
