@@ -24,6 +24,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     maketest.cpp \
+    matiere.cpp \
     note.cpp \
     question.cpp \
     reponse.cpp \
@@ -37,6 +38,7 @@ HEADERS += \
     loginpage.h \
     mainwindow.h \
     maketest.h \
+    matiere.h \
     note.h \
     question.h \
     reponse.h \
@@ -50,6 +52,7 @@ FORMS += \
     loginpage.ui \
     mainwindow.ui \
     maketest.ui \
+    matiere.ui \
     note.ui \
     users.ui
 

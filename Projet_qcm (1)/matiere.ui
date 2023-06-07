@@ -13,70 +13,16 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit_q">
+  <property name="styleSheet">
+   <string notr="true">background:rgb(85, 255, 255);
+border-radius:5px;
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>100</y>
-     <width>331</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>30</y>
-     <width>301</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>12</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Matieres:</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_exit">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>220</y>
-     <width>121</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>12</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Quitter</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="matiere_add">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>220</y>
+     <x>130</x>
+     <y>230</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -84,13 +30,82 @@
    <property name="font">
     <font>
      <family>Arial</family>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
+   </property>
+   <property name="text">
+    <string>Ajoutez</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="EditMatiere">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
      <pointsize>12</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>Ajoutez</string>
+    <string>Matiere :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>230</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
    </property>
   </widget>
  </widget>

@@ -29,6 +29,8 @@ private slots:
 
     void on_add_etudiant_2_clicked();
 
+    void on_make_test_2_clicked();
+
 private:
     Ui::AdminPage *ui;
 };

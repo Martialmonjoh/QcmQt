@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(85, 255, 255)</string>
+  </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
   </property>
@@ -478,7 +481,7 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:rgb(85, 255, 255)</string>
+    <string notr="true"/>
    </property>
    <property name="title">
     <string/>
@@ -510,7 +513,7 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background:rgb(255, 255, 255)</string>
+         <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
         </property>
        </widget>
       </item>
@@ -545,7 +548,7 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background:rgb(255, 255, 255)</string>
+         <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
         </property>
        </widget>
       </item>
@@ -661,10 +664,37 @@
    <property name="palette">
     <palette>
      <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Midlight">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
          <red>85</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
          <green>255</green>
          <blue>255</blue>
         </color>
@@ -672,6 +702,15 @@
       </colorrole>
      </active>
      <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Midlight">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
@@ -681,12 +720,57 @@
         </color>
        </brush>
       </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
      </inactive>
      <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Midlight">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
          <red>85</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
          <green>255</green>
          <blue>255</blue>
         </color>
@@ -703,8 +787,7 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:2px solid rgb(85, 255, 255);
-border-raduis:90px</string>
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
    </property>
    <property name="text">
     <string>Connexion</string>

@@ -43,3 +43,10 @@ void AdminPage::on_add_etudiant_2_clicked()
 
 
 
+
+void AdminPage::on_make_test_2_clicked()
+{
+    Matiere* a= new Matiere(this);
+    a->show();
+}
+

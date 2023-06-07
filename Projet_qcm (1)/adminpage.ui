@@ -25,7 +25,10 @@
    <string>Dialog</string>
   </property>
   <property name="autoFillBackground">
-   <bool>true</bool>
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-radius:5px;background:rgb(85, 255, 255)</string>
   </property>
   <widget class="QPushButton" name="add_etudiant">
    <property name="geometry">
@@ -44,6 +47,9 @@
      <bold>true</bold>
      <underline>false</underline>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;background:white</string>
    </property>
    <property name="text">
     <string>Ajouter etudiants</string>
@@ -67,6 +73,9 @@
      <underline>false</underline>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;background:white</string>
+   </property>
    <property name="text">
     <string>Exit</string>
    </property>
@@ -89,6 +98,9 @@
      <underline>false</underline>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;background:white</string>
+   </property>
    <property name="text">
     <string>Ajouter enseignants</string>
    </property>
@@ -110,6 +122,9 @@
      <bold>true</bold>
      <underline>false</underline>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;background:white</string>
    </property>
    <property name="text">
     <string>Creer des matieres</string>

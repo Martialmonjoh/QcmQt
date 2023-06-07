@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>QCM</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(85, 255, 255)</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="valider">
     <property name="geometry">
@@ -29,6 +32,9 @@
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
     </property>
     <property name="text">
      <string>Suivant</string>
@@ -222,6 +228,9 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
+       </property>
       </widget>
      </item>
     </layout>
@@ -261,6 +270,9 @@
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
     </property>
     <property name="text">
      <string>Historiques</string>

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(85, 255, 255)</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -24,7 +27,9 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>10</pointsize>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
      <bold>true</bold>
     </font>
    </property>
@@ -35,11 +40,22 @@
   <widget class="QPushButton" name="yes_btn">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>210</y>
+     <x>230</x>
+     <y>230</y>
      <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
    </property>
    <property name="text">
     <string>Oui</string>
@@ -48,11 +64,22 @@
   <widget class="QPushButton" name="no_btn">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>210</y>
+     <x>370</x>
+     <y>230</y>
      <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
    </property>
    <property name="text">
     <string>Non</string>
@@ -63,20 +90,51 @@
     <rect>
      <x>30</x>
      <y>90</y>
-     <width>401</width>
+     <width>441</width>
      <height>111</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QLabel" name="label_nbr_student">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Entrez votre identifiant : </string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_user"/>
+     <widget class="QLineEdit" name="lineEdit_user">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

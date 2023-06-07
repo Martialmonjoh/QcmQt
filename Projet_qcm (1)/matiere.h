@@ -16,9 +16,9 @@ public:
     ~Matiere();
 
 private slots:
-    void on_pushButton_exit_clicked();
+    void on_pushButton_clicked();
 
-    void on_matiere_add_clicked();
+    void on_pushButton_2_clicked();
 
 private:
     Ui::Matiere *ui;

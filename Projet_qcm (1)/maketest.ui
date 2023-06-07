@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(85, 255, 255)</string>
+  </property>
   <widget class="QPushButton" name="pushButton_add">
    <property name="geometry">
     <rect>
@@ -25,10 +28,13 @@
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>14</pointsize>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
    </property>
    <property name="text">
     <string>Ajoutez</string>
@@ -46,10 +52,13 @@
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>14</pointsize>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
    </property>
    <property name="text">
     <string>Quitter</string>
@@ -67,9 +76,13 @@
    <property name="font">
     <font>
      <family>Arial</family>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
@@ -83,7 +96,7 @@
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <italic>true</italic>
       <bold>true</bold>
      </font>
@@ -104,9 +117,13 @@
     <property name="font">
      <font>
       <family>Arial</family>
+      <pointsize>11</pointsize>
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_r2">
@@ -121,9 +138,13 @@
     <property name="font">
      <font>
       <family>Arial</family>
+      <pointsize>11</pointsize>
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_r3">
@@ -138,9 +159,13 @@
     <property name="font">
      <font>
       <family>Arial</family>
+      <pointsize>11</pointsize>
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_r4">
@@ -155,9 +180,13 @@
     <property name="font">
      <font>
       <family>Arial</family>
+      <pointsize>11</pointsize>
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_r5">
@@ -172,9 +201,13 @@
     <property name="font">
      <font>
       <family>Arial</family>
+      <pointsize>11</pointsize>
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
     </property>
    </widget>
   </widget>
@@ -183,13 +216,14 @@
     <rect>
      <x>800</x>
      <y>10</y>
-     <width>107</width>
+     <width>121</width>
      <height>19</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial</family>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
@@ -200,7 +234,7 @@
       <property name="font">
        <font>
         <family>Arial</family>
-        <pointsize>9</pointsize>
+        <pointsize>11</pointsize>
         <italic>true</italic>
         <bold>true</bold>
        </font>
@@ -215,6 +249,7 @@
       <property name="font">
        <font>
         <family>Arial</family>
+        <pointsize>11</pointsize>
         <italic>true</italic>
         <bold>true</bold>
        </font>
@@ -238,6 +273,7 @@
    <property name="font">
     <font>
      <family>Arial</family>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
@@ -248,7 +284,7 @@
       <property name="font">
        <font>
         <family>Arial</family>
-        <pointsize>9</pointsize>
+        <pointsize>11</pointsize>
         <italic>true</italic>
         <bold>true</bold>
        </font>
@@ -263,6 +299,7 @@
       <property name="font">
        <font>
         <family>Arial</family>
+        <pointsize>11</pointsize>
         <italic>true</italic>
         <bold>true</bold>
        </font>
@@ -277,8 +314,8 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>460</y>
+     <x>50</x>
+     <y>470</y>
      <width>811</width>
      <height>51</height>
     </rect>
@@ -286,7 +323,7 @@
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>18</pointsize>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
@@ -298,8 +335,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>420</y>
+     <x>60</x>
+     <y>440</y>
      <width>1041</width>
      <height>34</height>
     </rect>
@@ -307,7 +344,7 @@
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>16</pointsize>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
@@ -319,16 +356,16 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>350</y>
+     <x>30</x>
+     <y>390</y>
      <width>661</width>
-     <height>91</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>18</pointsize>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
@@ -349,9 +386,13 @@
    <property name="font">
     <font>
      <family>Arial</family>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white; border:1 px solid;border-radius:5px</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -366,7 +407,7 @@
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>12</pointsize>
+     <pointsize>11</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
